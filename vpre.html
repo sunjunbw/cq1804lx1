@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="https://cdn.bootcss.com/vue/2.6.10/vue.js"></script>
+	<style>
+	
+	</style>
+</head>
+<body>
+	<div id="box">
+		<p @click="fun(555)">{{school}}</p>
+	</div>
+	<script>
+	    obj={
+	    	data:{
+	    		school:"千锋"
+	    	},
+	    	methods:{
+	    		fun(a){
+	    			console.log("混入的方法",a)
+	    		}
+	    	}
+	    }
+		var vm =new Vue({
+			el:"#box",
+			mixins:[obj],
+			data:{
+				a:123,
+
+			},
+			methods:{
+				fun2(){
+					console.log(12);
+				}
+			}
+		})
+		console.log(vm)
+	
+		
+	</script>
+</body>
+</html>

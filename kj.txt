@@ -1,0 +1,25 @@
+swiper
+
+npm i swiper --save
+
+静态的时候实例化一定要放在mounted函数里
+
+动态时候实例化监听数据的变化以后(WATCH)和$nextTick
+
+$nextTick 等到dom 就绪后才会执行回调函数
+
+
+v-cloak  防止花括号闪烁
+
+v-pre 不解析差值表达式了、
+ 
+mixins 混入   抽取公共的方法，属性，数据，实例需要可以混入
+
+git config --global user.name 账号
+git config --global user.email 邮箱
+
+
+git clone 仓库的地址
+
+生成密钥命令
+ssh-keygen -t rsa -C  邮箱
